@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Music, Users, Utensils, PartyPopper } from "lucide-react";
-import flyer from "@/assets/festival-flyer.png";
+import flyer from "@/assets/festival-flyer-2026.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
