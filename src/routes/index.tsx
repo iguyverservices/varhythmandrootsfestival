@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Music, Users, Utensils, PartyPopper } from "lucide-react";
-import flyer from "@/assets/festival-flyer.png";
+import flyer from "@/assets/festival-flyer-2026.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,7 +51,7 @@ function Home() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl bg-accent/40 blur-2xl" />
-            <img src={flyer} alt="VA Rhythm & Roots Festival 2026 flyer" className="relative w-full rounded-2xl shadow-2xl ring-4 ring-accent/60" />
+            <img src={flyer.url} alt="VA Rhythm & Roots Festival 2026 flyer" className="relative w-full rounded-2xl shadow-2xl ring-4 ring-accent/60" />
           </div>
         </div>
       </section>
