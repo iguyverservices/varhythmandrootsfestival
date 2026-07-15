@@ -10,21 +10,14 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VendorsRouteImport } from './routes/vendors'
-import { Route as SponsorsRouteImport } from './routes/sponsors'
 import { Route as LineupRouteImport } from './routes/lineup'
 import { Route as InfoRouteImport } from './routes/info'
-import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const VendorsRoute = VendorsRouteImport.update({
   id: '/vendors',
   path: '/vendors',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SponsorsRoute = SponsorsRouteImport.update({
-  id: '/sponsors',
-  path: '/sponsors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LineupRoute = LineupRouteImport.update({
@@ -35,11 +28,6 @@ const LineupRoute = LineupRouteImport.update({
 const InfoRoute = InfoRouteImport.update({
   id: '/info',
   path: '/info',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -56,68 +44,38 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
   '/info': typeof InfoRoute
   '/lineup': typeof LineupRoute
-  '/sponsors': typeof SponsorsRoute
   '/vendors': typeof VendorsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
   '/info': typeof InfoRoute
   '/lineup': typeof LineupRoute
-  '/sponsors': typeof SponsorsRoute
   '/vendors': typeof VendorsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
   '/info': typeof InfoRoute
   '/lineup': typeof LineupRoute
-  '/sponsors': typeof SponsorsRoute
   '/vendors': typeof VendorsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/info'
-    | '/lineup'
-    | '/sponsors'
-    | '/vendors'
+  fullPaths: '/' | '/about' | '/info' | '/lineup' | '/vendors'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/info'
-    | '/lineup'
-    | '/sponsors'
-    | '/vendors'
-  id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/info'
-    | '/lineup'
-    | '/sponsors'
-    | '/vendors'
+  to: '/' | '/about' | '/info' | '/lineup' | '/vendors'
+  id: '__root__' | '/' | '/about' | '/info' | '/lineup' | '/vendors'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ContactRoute: typeof ContactRoute
   InfoRoute: typeof InfoRoute
   LineupRoute: typeof LineupRoute
-  SponsorsRoute: typeof SponsorsRoute
   VendorsRoute: typeof VendorsRoute
 }
 
@@ -128,13 +86,6 @@ declare module '@tanstack/react-router' {
       path: '/vendors'
       fullPath: '/vendors'
       preLoaderRoute: typeof VendorsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sponsors': {
-      id: '/sponsors'
-      path: '/sponsors'
-      fullPath: '/sponsors'
-      preLoaderRoute: typeof SponsorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/lineup': {
@@ -149,13 +100,6 @@ declare module '@tanstack/react-router' {
       path: '/info'
       fullPath: '/info'
       preLoaderRoute: typeof InfoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -178,22 +122,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ContactRoute: ContactRoute,
   InfoRoute: InfoRoute,
   LineupRoute: LineupRoute,
-  SponsorsRoute: SponsorsRoute,
   VendorsRoute: VendorsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
