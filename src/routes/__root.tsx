@@ -68,16 +68,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "VA Rhythm & Roots Festival 2026 — Virginia Beach" },
+      { title: "VA Rhythm & Roots Festival 2026 — Aug 22, Virginia Beach" },
       {
         name: "description",
         content:
-          "Free family festival at Mt Trashmore Park in Virginia Beach. R&B, Reggae, Soca & Afrobeat live bands, DJs, food trucks, and family fun on Saturday, August 22, 2026.",
+          "Free, all-ages festival at Mt Trashmore Park: R&B, Reggae, Soca & Afrobeat, line dancing, food trucks, art vendors, and family fun.",
       },
-      { property: "og:title", content: "VA Rhythm & Roots Festival 2026" },
-      { property: "og:description", content: "Come for R&B, stay for Reggae. Aug 22, 2026 at Mt Trashmore Park, Virginia Beach." },
+      { property: "og:title", content: "VA Rhythm & Roots Festival 2026 — Aug 22, Virginia Beach" },
+      { property: "og:description", content: "Free, all-ages festival at Mt Trashmore Park: R&B, Reggae, Soca & Afrobeat, line dancing, food trucks, art vendors, and family fun." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "VA Rhythm & Roots Festival 2026 — Aug 22, Virginia Beach" },
+      { name: "twitter:description", content: "Free, all-ages festival at Mt Trashmore Park: R&B, Reggae, Soca & Afrobeat, line dancing, food trucks, art vendors, and family fun." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5355ef82-8e1a-447b-8b2b-3b3c365926bd/id-preview-51e74784--b456f134-e016-43f5-a3ef-511e7d6448be.lovable.app-1784100957583.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5355ef82-8e1a-447b-8b2b-3b3c365926bd/id-preview-51e74784--b456f134-e016-43f5-a3ef-511e7d6448be.lovable.app-1784100957583.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

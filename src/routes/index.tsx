@@ -9,8 +9,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "VA Rhythm & Roots Festival 2026 — Aug 22, Virginia Beach" },
       { name: "description", content: "Free, all-ages festival at Mt Trashmore Park: R&B, Reggae, Soca & Afrobeat, line dancing, food trucks, art vendors, and family fun." },
-      { property: "og:title", content: "VA Rhythm & Roots Festival 2026" },
-      { property: "og:description", content: "Come for R&B, stay for Reggae. Aug 22, 2026 · Mt Trashmore Park, Virginia Beach." },
+      { property: "og:title", content: "VA Rhythm & Roots Festival 2026 — Aug 22, Virginia Beach" },
+      { property: "og:description", content: "Free, all-ages festival at Mt Trashmore Park: R&B, Reggae, Soca & Afrobeat, line dancing, food trucks, art vendors, and family fun." },
     ],
   }),
   component: Home,
