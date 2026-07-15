@@ -25,7 +25,7 @@ export function SiteFooter() {
             <li><Link to="/lineup" className="hover:underline">Lineup</Link></li>
             <li><Link to="/vendors" className="hover:underline">Become a Vendor</Link></li>
             <li><Link to="/info" className="hover:underline">RSVP a Shelter</Link></li>
-            <li><Link to="/sponsors" className="hover:underline">Sponsors</Link></li>
+            
           </ul>
         </div>
       </div>
