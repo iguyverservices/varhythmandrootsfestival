@@ -8,8 +8,6 @@ const nav = [
   { to: "/about", label: "About" },
   { to: "/info", label: "Event Info" },
   { to: "/vendors", label: "Vendors" },
-  { to: "/sponsors", label: "Sponsors" },
-  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function SiteHeader() {
