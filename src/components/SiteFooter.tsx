@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/20 py-4 text-center text-xs opacity-80">
-        © {new Date().getFullYear()} VA Rhythm &amp; Roots Festival · varhythmandroots.com
+        © {new Date().getFullYear()} VA Rhythm &amp; Roots Festival · varhythmandrootsfestival.com
       </div>
     </footer>
   );
