@@ -11,6 +11,12 @@ import raspyUnknown from "@/assets/raspy-unknown.png.asset.json";
 import toxicVibes from "@/assets/toxic-vibes.png.asset.json";
 import noLimitSteppaz from "@/assets/757-no-limit-steppaz.png.asset.json";
 import soulFoodKitchen from "@/assets/thee-soul-food-kitchen.jpg.asset.json";
+import djChrisG from "@/assets/dj-chris-g.png.asset.json";
+import djRedCarpetCapo from "@/assets/dj-red-carpet-capo.png.asset.json";
+import gregGuttyBand from "@/assets/greg-gutty-band.png.asset.json";
+import smilesOnFaces from "@/assets/smiles-on-faces.jpg.asset.json";
+import higherLevelSound from "@/assets/higher-level-sound.jpg.asset.json";
+import djGeso from "@/assets/dj-geso.jpg.asset.json";
 
 const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
@@ -19,7 +25,14 @@ const partners = [
   { name: "Toxic Vibes Sound", url: toxicVibes.url },
   { name: "757 No Limit Steppaz", url: noLimitSteppaz.url },
   { name: "Thee Soul Food Kitchen", url: soulFoodKitchen.url },
+  { name: "DJ Chris G", url: djChrisG.url },
+  { name: "DJ Red Carpet Capo", url: djRedCarpetCapo.url },
+  { name: "Greg Gutty Band", url: gregGuttyBand.url },
+  { name: "Smiles On Faces", url: smilesOnFaces.url },
+  { name: "Higher Level Sound", url: higherLevelSound.url },
+  { name: "DJ Geso", url: djGeso.url },
 ];
+
 
 export const Route = createFileRoute("/sponsors")({
   head: () => ({
