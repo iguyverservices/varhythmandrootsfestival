@@ -165,7 +165,7 @@ function Sponsors() {
           {partners.map((p) => (
             <li
               key={p.name}
-              className="flex aspect-square items-center justify-center rounded-2xl border bg-card p-5 shadow-sm"
+              className="flex aspect-square items-center justify-center rounded-2xl border bg-card p-3 shadow-sm"
             >
               <img
                 src={p.url}
