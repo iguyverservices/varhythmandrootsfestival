@@ -36,39 +36,41 @@ function Sponsors() {
         {/* Morring Law */}
         <article className="relative overflow-hidden rounded-2xl border bg-card p-8 shadow-sm">
           <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-primary via-accent to-secondary" />
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-foreground">
-            <Star className="size-3.5" /> Title Sponsor
-          </span>
-          <h2 className="mt-4 font-display text-3xl">Morring Law</h2>
-          <p className="mt-1 font-semibold text-secondary">
-            Where We Fight and You Win · An Injured Worker&apos;s Dream Team
-          </p>
-          <div className="mt-5 grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
-            <p className="text-foreground/90 leading-relaxed">
-              Morring Law is a boutique firm representing injured workers locally and nationally.
-              With more than 26 years of experience, we handle claims arising at shipyards, on the
-              docks, and in every kind of workplace — along with Social Security disability claims,
-              where we have achieved consistent success. Denied benefits are not the end of the
-              road. Contact Morring Law — Where We Fight and You Win.
-            </p>
+          <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+            <div>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-foreground">
+                <Star className="size-3.5" /> Title Sponsor
+              </span>
+              <h2 className="mt-4 font-display text-3xl">Morring Law</h2>
+              <p className="mt-1 font-semibold text-secondary">
+                Where We Fight and You Win · An Injured Worker&apos;s Dream Team
+              </p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                Morring Law is a boutique firm representing injured workers locally and nationally.
+                With more than 26 years of experience, we handle claims arising at shipyards, on the
+                docks, and in every kind of workplace — along with Social Security disability claims,
+                where we have achieved consistent success. Denied benefits are not the end of the
+                road. Contact Morring Law — Where We Fight and You Win.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <Button asChild>
+                  <a href="tel:18556672667"><Phone className="size-4" />1-855-MOR-COMP</a>
+                </Button>
+                <Button asChild variant="outline">
+                  <a href="https://www.MorringLaw.com" target="_blank" rel="noopener noreferrer">
+                    <Globe className="size-4" />www.MorringLaw.com
+                  </a>
+                </Button>
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground">1-855-667-2667</p>
+            </div>
             <img
               src={morringTeam.url}
               alt="The attorneys of Morring Law"
               loading="lazy"
-              className="w-full rounded-xl border object-cover md:w-72"
+              className="w-full self-start rounded-xl border object-cover md:w-72"
             />
           </div>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Button asChild>
-              <a href="tel:18556672667"><Phone className="size-4" />1-855-MOR-COMP</a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="https://www.MorringLaw.com" target="_blank" rel="noopener noreferrer">
-                <Globe className="size-4" />www.MorringLaw.com
-              </a>
-            </Button>
-          </div>
-          <p className="mt-3 text-sm text-muted-foreground">1-855-667-2667</p>
         </article>
 
         {/* E. Palmer Supermarket */}
