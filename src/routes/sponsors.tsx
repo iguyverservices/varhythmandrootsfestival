@@ -156,6 +156,28 @@ function Sponsors() {
         </article>
       </section>
 
+      <section className="mx-auto max-w-5xl px-4 pb-16">
+        <h2 className="text-center font-display text-3xl">Our Partners</h2>
+        <p className="mt-2 text-center text-muted-foreground">
+          Proud supporters and performers of VA Rhythm &amp; Roots Festival.
+        </p>
+        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3">
+          {partners.map((p) => (
+            <li
+              key={p.name}
+              className="flex aspect-square items-center justify-center rounded-2xl border bg-card p-5 shadow-sm"
+            >
+              <img
+                src={p.url}
+                alt={`${p.name} logo`}
+                loading="lazy"
+                className="max-h-full max-w-full object-contain"
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+
     </PageShell>
   );
 }
