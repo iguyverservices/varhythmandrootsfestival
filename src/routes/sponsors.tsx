@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Phone, Globe, Star, ShoppingBasket, UtensilsCrossed } from "lucide-react";
+import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
+import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
+import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/sponsors")({
   head: () => ({
@@ -40,12 +43,21 @@ function Sponsors() {
           <p className="mt-1 font-semibold text-secondary">
             Where We Fight and You Win · An Injured Worker&apos;s Dream Team
           </p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            A boutique firm with over 26 years of experience representing injured workers locally
-            and nationally across Virginia, North Carolina, and New York. Specializing in
-            Workers&apos; Compensation, Social Security Disability, and Longshore &amp; Defense Base
-            Act claims.
-          </p>
+          <div className="mt-5 grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+            <p className="text-foreground/90 leading-relaxed">
+              Morring Law is a boutique firm representing injured workers locally and nationally.
+              With more than 26 years of experience, we handle claims arising at shipyards, on the
+              docks, and in every kind of workplace — along with Social Security disability claims,
+              where we have achieved consistent success. Denied benefits are not the end of the
+              road. Contact Morring Law — Where We Fight and You Win.
+            </p>
+            <img
+              src={morringTeam.url}
+              alt="The attorneys of Morring Law"
+              loading="lazy"
+              className="w-full rounded-xl border object-cover md:w-72"
+            />
+          </div>
           <div className="mt-5 flex flex-wrap gap-3">
             <Button asChild>
               <a href="tel:18556672667"><Phone className="size-4" />1-855-MOR-COMP</a>
@@ -61,21 +73,35 @@ function Sponsors() {
 
         {/* E. Palmer Supermarket */}
         <article className="rounded-2xl border bg-card p-8 shadow-sm">
-          <ShoppingBasket className="text-primary" />
+          <div className="flex flex-wrap items-center gap-4">
+            <img
+              src={ePalmerLogo.url}
+              alt="E. Palmer Supermarket logo"
+              loading="lazy"
+              className="h-20 w-auto"
+            />
+            <ShoppingBasket className="text-primary" />
+          </div>
           <h2 className="mt-3 font-display text-3xl">E. Palmer Supermarket</h2>
           <p className="mt-1 font-semibold text-secondary">Serving the Community with Pride</p>
           <p className="mt-4 text-foreground/90 leading-relaxed">
-            An independently owned, veteran-founded, and minority-owned full-service supermarket
-            founded by Mike Palmer and Esron Palmer, serving Norfolk and surrounding areas with
-            quality products and affordable prices.
+            E. Palmer Supermarket is an independently owned, veteran-founded, minority-owned
+            supermarket founded by Mike Palmer and Esron Palmer. They take pride in bringing a
+            full-service supermarket to the underserved communities of Norfolk and the surrounding
+            areas. Their mission is to provide quality products, affordable prices, and exceptional
+            customer service while serving their neighbors with pride every day.
           </p>
-          <ul className="mt-5 grid gap-2 sm:grid-cols-2 text-sm text-foreground/90">
+          <p className="mt-5 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+            They Offer
+          </p>
+          <ul className="mt-2 grid gap-2 sm:grid-cols-2 text-sm text-foreground/90">
             {[
               "Fresh Fruits & Veggies — 50% OFF with EBT",
               "In-House Butcher — fresh meats cut daily",
               "Caribbean & International Groceries",
               "Household Essentials",
               "Weekly Specials",
+              "Friendly Customer Service",
             ].map((item) => (
               <li key={item} className="rounded-lg bg-accent/15 px-3 py-2">{item}</li>
             ))}
@@ -84,14 +110,31 @@ function Sponsors() {
 
         {/* MP Island Cafe */}
         <article className="rounded-2xl border bg-card p-8 shadow-sm">
-          <UtensilsCrossed className="text-primary" />
+          <div className="flex flex-wrap items-center gap-4">
+            <img
+              src={mpIslandLogo.url}
+              alt="MP Island Cafe logo"
+              loading="lazy"
+              className="h-24 w-auto"
+            />
+            <UtensilsCrossed className="text-primary" />
+          </div>
           <h2 className="mt-3 font-display text-3xl">MP Island Cafe</h2>
-          <p className="mt-1 font-semibold text-secondary">Featured Partner</p>
+          <p className="mt-1 font-semibold text-secondary">
+            Giving You A True Taste of the Islands
+          </p>
           <p className="mt-4 text-foreground/90 leading-relaxed">
             Bringing authentic island flavors and cuisine to the festival.
           </p>
+          <p className="mt-4 text-foreground/90 leading-relaxed">
+            MP Island Cafe has three locations: 5957 E. Va Beach Blvd. in Norfolk, VA; 12914
+            Jefferson Ave. in Newport News, VA; and 5583 Portsmouth Blvd. in Portsmouth, VA. We
+            offer a wide variety of Caribbean and Soul Food cuisine, including an all-you-can-eat
+            lunch and dinner buffet which is sure to delight your taste buds.
+          </p>
         </article>
       </section>
+
     </PageShell>
   );
 }
