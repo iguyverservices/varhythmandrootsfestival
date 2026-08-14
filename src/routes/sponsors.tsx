@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Phone, Globe, Star, ShoppingBasket, UtensilsCrossed } from "lucide-react";
+import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
+import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
+import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/sponsors")({
   head: () => ({
