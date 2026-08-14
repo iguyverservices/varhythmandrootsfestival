@@ -5,6 +5,21 @@ import { Phone, Globe, Star } from "lucide-react";
 import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
 import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
 import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
+import yankeeGirl from "@/assets/yankee-girl-promotions.jpg.asset.json";
+import phenomenalSound from "@/assets/phenomenal-sound.png.asset.json";
+import raspyUnknown from "@/assets/raspy-unknown.png.asset.json";
+import toxicVibes from "@/assets/toxic-vibes.png.asset.json";
+import noLimitSteppaz from "@/assets/757-no-limit-steppaz.png.asset.json";
+import soulFoodKitchen from "@/assets/thee-soul-food-kitchen.jpg.asset.json";
+
+const partners = [
+  { name: "Yankee Girl Promotions", url: yankeeGirl.url },
+  { name: "Phenomenal Sound R&B Band", url: phenomenalSound.url },
+  { name: "Raspy & The Unknown Band", url: raspyUnknown.url },
+  { name: "Toxic Vibes Sound", url: toxicVibes.url },
+  { name: "757 No Limit Steppaz", url: noLimitSteppaz.url },
+  { name: "Thee Soul Food Kitchen", url: soulFoodKitchen.url },
+];
 
 export const Route = createFileRoute("/sponsors")({
   head: () => ({
@@ -139,6 +154,28 @@ function Sponsors() {
             />
           </div>
         </article>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 pb-16">
+        <h2 className="text-center font-display text-3xl">Our Partners</h2>
+        <p className="mt-2 text-center text-muted-foreground">
+          Proud supporters and performers of VA Rhythm &amp; Roots Festival.
+        </p>
+        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3">
+          {partners.map((p) => (
+            <li
+              key={p.name}
+              className="flex aspect-square items-center justify-center rounded-2xl border bg-card p-5 shadow-sm"
+            >
+              <img
+                src={p.url}
+                alt={`${p.name} logo`}
+                loading="lazy"
+                className="max-h-full max-w-full object-contain"
+              />
+            </li>
+          ))}
+        </ul>
       </section>
 
     </PageShell>
