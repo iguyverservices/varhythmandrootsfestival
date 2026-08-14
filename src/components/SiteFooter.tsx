@@ -1,4 +1,7 @@
 import { Link } from "@tanstack/react-router";
+import { Instagram, Facebook } from "lucide-react";
+
+const EVENTBRITE = "https://varhythmandrootsfestival.eventbrite.com";
 
 export function SiteFooter() {
   return (
@@ -7,30 +10,41 @@ export function SiteFooter() {
         <div>
           <h3 className="font-display text-2xl">VA Rhythm &amp; Roots Festival</h3>
           <p className="mt-2 text-sm opacity-90">
-            Mt Trashmore Park · 310 Edwin Drive, Virginia Beach
+            Mount Trashmore Park · 310 Edwin Drive, Virginia Beach, VA
             <br />
-            Saturday, August 22, 2026 · 11 AM – 7 PM
+            Saturday, August 22, 2026 · 11:00 AM – 7:00 PM
           </p>
         </div>
         <div className="text-sm space-y-1">
           <p className="font-semibold uppercase tracking-wide text-accent">General Info</p>
           <p>Phone: <a className="underline" href="tel:7572301562">757-230-1562</a></p>
           <p>Email: <a className="underline" href="mailto:varhythmrootsfestival@gmail.com">varhythmrootsfestival@gmail.com</a></p>
-          <p className="mt-3 font-semibold uppercase tracking-wide text-accent">Vendor Info</p>
-          <p>Phone: <a className="underline" href="tel:7572045650">757-204-5650</a></p>
+          <p className="mt-3 font-semibold uppercase tracking-wide text-accent">Follow Us</p>
+          <p className="flex items-center gap-2">
+            <Instagram className="size-4" />
+            <a className="hover:underline" href="https://instagram.com/varhythmandrootsfestival" target="_blank" rel="noopener noreferrer">@varhythmandrootsfestival</a>
+          </p>
+          <p className="flex items-center gap-2">
+            <Facebook className="size-4" />
+            <a className="hover:underline" href="https://facebook.com/varhythmandrootsfestival" target="_blank" rel="noopener noreferrer">VA Rhythm &amp; Roots Festival</a>
+          </p>
         </div>
         <div className="text-sm space-y-2">
           <p className="font-semibold uppercase tracking-wide text-accent">Quick Links</p>
           <ul className="space-y-1">
+            <li><Link to="/" className="hover:underline">Home</Link></li>
             <li><Link to="/lineup" className="hover:underline">Lineup</Link></li>
-            <li><Link to="/vendors" className="hover:underline">Become a Vendor</Link></li>
-            <li><Link to="/info" className="hover:underline">RSVP a Shelter</Link></li>
-            
+            <li>
+              <a className="hover:underline" href={EVENTBRITE} target="_blank" rel="noopener noreferrer">
+                Shelter Rentals (Eventbrite)
+              </a>
+            </li>
+            <li><Link to="/sponsors" className="hover:underline">Sponsors</Link></li>
           </ul>
         </div>
       </div>
       <div className="border-t border-primary-foreground/20 py-4 text-center text-xs opacity-80">
-        © {new Date().getFullYear()} VA Rhythm &amp; Roots Festival · varhythmandrootsfestival.com
+        © 2026 VA Rhythm &amp; Roots Festival. All rights reserved. · varhythmandrootsfestival.com
       </div>
     </footer>
   );
