@@ -115,27 +115,29 @@ function Sponsors() {
 
         {/* MP Island Cafe */}
         <article className="rounded-2xl border bg-card p-8 shadow-sm">
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+            <div>
+              <h2 className="font-display text-3xl">MP Island Cafe</h2>
+              <p className="mt-1 font-semibold text-secondary">
+                Giving You A True Taste of the Islands
+              </p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                Bringing authentic island flavors and cuisine to the festival.
+              </p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                MP Island Cafe has three locations: 5957 E. Va Beach Blvd. in Norfolk, VA; 12914
+                Jefferson Ave. in Newport News, VA; and 5583 Portsmouth Blvd. in Portsmouth, VA. We
+                offer a wide variety of Caribbean and Soul Food cuisine, including an all-you-can-eat
+                lunch and dinner buffet which is sure to delight your taste buds.
+              </p>
+            </div>
             <img
               src={mpIslandLogo.url}
               alt="MP Island Cafe logo"
               loading="lazy"
-              className="h-32 w-auto"
+              className="w-full self-start md:w-64"
             />
           </div>
-          <h2 className="mt-3 font-display text-3xl">MP Island Cafe</h2>
-          <p className="mt-1 font-semibold text-secondary">
-            Giving You A True Taste of the Islands
-          </p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            Bringing authentic island flavors and cuisine to the festival.
-          </p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            MP Island Cafe has three locations: 5957 E. Va Beach Blvd. in Norfolk, VA; 12914
-            Jefferson Ave. in Newport News, VA; and 5583 Portsmouth Blvd. in Portsmouth, VA. We
-            offer a wide variety of Caribbean and Soul Food cuisine, including an all-you-can-eat
-            lunch and dinner buffet which is sure to delight your taste buds.
-          </p>
         </article>
       </section>
 
