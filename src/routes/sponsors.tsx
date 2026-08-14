@@ -52,17 +52,19 @@ function Sponsors() {
                 where we have achieved consistent success. Denied benefits are not the end of the
                 road. Contact Morring Law — Where We Fight and You Win.
               </p>
-              <div className="mt-5 flex flex-wrap gap-3">
-                <Button asChild>
-                  <a href="tel:18556672667"><Phone className="size-4" />1-855-MOR-COMP</a>
-                </Button>
+              <div className="mt-5 flex flex-wrap items-start gap-3">
+                <div className="flex flex-col items-center gap-1">
+                  <Button asChild>
+                    <a href="tel:18556672667"><Phone className="size-4" />1-855-MOR-COMP</a>
+                  </Button>
+                  <p className="text-sm text-muted-foreground">1-855-667-2667</p>
+                </div>
                 <Button asChild variant="outline">
                   <a href="https://www.MorringLaw.com" target="_blank" rel="noopener noreferrer">
                     <Globe className="size-4" />www.MorringLaw.com
                   </a>
                 </Button>
               </div>
-              <p className="mt-3 text-sm text-muted-foreground">1-855-667-2667</p>
             </div>
             <img
               src={morringTeam.url}
