@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
-import { Phone, Globe, Star, ShoppingBasket, UtensilsCrossed } from "lucide-react";
+import { Phone, Globe, Star, ShoppingBasket } from "lucide-react";
 import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
 import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
 import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
@@ -119,9 +119,8 @@ function Sponsors() {
               src={mpIslandLogo.url}
               alt="MP Island Cafe logo"
               loading="lazy"
-              className="h-24 w-auto"
+              className="h-32 w-auto"
             />
-            <UtensilsCrossed className="text-primary" />
           </div>
           <h2 className="mt-3 font-display text-3xl">MP Island Cafe</h2>
           <p className="mt-1 font-semibold text-secondary">
