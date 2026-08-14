@@ -65,17 +65,22 @@ function Info() {
         <div className="rounded-2xl border bg-card p-6">
           <div className="flex items-center gap-3">
             <Tent className="text-primary" />
-            <h2 className="font-display text-2xl">Shelters available to RSVP</h2>
+            <h2 className="font-display text-2xl">Reserve a Park Shelter</h2>
           </div>
           <p className="mt-2 text-foreground/90">
-            Park shelters can be reserved for groups and families. They're first come, first
-            served — contact us to lock yours in before they're gone.
+            Planning to attend with a large group or family? Reserve one of the park shelters at
+            Mount Trashmore for your crew. Reservations are managed directly through Eventbrite.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Button asChild><a href="tel:7572301562"><Phone className="size-4" />Call 757-230-1562</a></Button>
-            <Button asChild variant="outline"><a href="mailto:varhythmrootsfestival@gmail.com?subject=Shelter%20RSVP"><Mail className="size-4" />Email RSVP</a></Button>
+            <Button asChild>
+              <a href="https://varhythmandrootsfestival.eventbrite.com" target="_blank" rel="noopener noreferrer">
+                Book Your Shelter on Eventbrite
+              </a>
+            </Button>
+            <Button asChild variant="outline"><a href="mailto:varhythmrootsfestival@gmail.com?subject=Shelter%20Question"><Mail className="size-4" />Email us</a></Button>
           </div>
         </div>
+
       </section>
 
       <section className="mx-auto max-w-5xl px-4 pb-16">

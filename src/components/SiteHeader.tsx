@@ -1,13 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+
+const EVENTBRITE = "https://varhythmandrootsfestival.eventbrite.com";
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/lineup", label: "Lineup" },
-  { to: "/about", label: "About" },
   { to: "/info", label: "Event Info" },
-  { to: "/vendors", label: "Vendors" },
+  { to: "/sponsors", label: "Sponsors" },
 ] as const;
 
 export function SiteHeader() {
@@ -30,6 +32,9 @@ export function SiteHeader() {
               {n.label}
             </Link>
           ))}
+          <Button asChild size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <a href={EVENTBRITE} target="_blank" rel="noopener noreferrer">Rent a Shelter</a>
+          </Button>
         </nav>
         <button className="md:hidden" onClick={() => setOpen((o) => !o)} aria-label="Menu">
           {open ? <X /> : <Menu />}
@@ -49,6 +54,9 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
+            <Button asChild size="sm" className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90">
+              <a href={EVENTBRITE} target="_blank" rel="noopener noreferrer">Rent a Shelter</a>
+            </Button>
           </nav>
         </div>
       )}
