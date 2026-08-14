@@ -3,6 +3,7 @@ import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Phone, Globe, Star } from "lucide-react";
 import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
+import morringLogo from "@/assets/morring-law-logo.jpg.asset.json";
 import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
 import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 import yankeeGirl from "@/assets/yankee-girl-promotions.jpg.asset.json";
@@ -94,12 +95,20 @@ function Sponsors() {
                 </Button>
               </div>
             </div>
-            <img
-              src={morringTeam.url}
-              alt="The attorneys of Morring Law"
-              loading="lazy"
-              className="w-full self-start rounded-xl border object-cover md:w-72"
-            />
+            <div className="flex flex-col gap-4">
+              <img
+                src={morringTeam.url}
+                alt="The attorneys of Morring Law"
+                loading="lazy"
+                className="w-full self-start rounded-xl border object-cover md:w-72"
+              />
+              <img
+                src={morringLogo.url}
+                alt="Morring Law logo"
+                loading="lazy"
+                className="w-full self-start rounded-xl border bg-white p-3 md:w-72"
+              />
+            </div>
           </div>
         </article>
 
