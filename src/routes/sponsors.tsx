@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
-import { Phone, Globe, Star, ShoppingBasket } from "lucide-react";
+import { Phone, Globe, Star } from "lucide-react";
 import morringTeam from "@/assets/morring-law-team.jpg.asset.json";
 import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
 import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
@@ -77,64 +77,67 @@ function Sponsors() {
 
         {/* E. Palmer Supermarket */}
         <article className="rounded-2xl border bg-card p-8 shadow-sm">
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+            <div>
+              <h2 className="font-display text-3xl">E. Palmer Supermarket</h2>
+              <p className="mt-1 font-semibold text-secondary">Serving the Community with Pride</p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                E. Palmer Supermarket is an independently owned, veteran-founded, minority-owned
+                supermarket founded by Mike Palmer and Esron Palmer. They take pride in bringing a
+                full-service supermarket to the underserved communities of Norfolk and the surrounding
+                areas. Their mission is to provide quality products, affordable prices, and exceptional
+                customer service while serving their neighbors with pride every day.
+              </p>
+              <p className="mt-5 text-sm font-bold uppercase tracking-wider text-muted-foreground">
+                They Offer
+              </p>
+              <ul className="mt-2 grid gap-2 sm:grid-cols-2 text-sm text-foreground/90">
+                {[
+                  "Fresh Fruits & Veggies — 50% OFF with EBT",
+                  "In-House Butcher — fresh meats cut daily",
+                  "Caribbean & International Groceries",
+                  "Household Essentials",
+                  "Weekly Specials",
+                  "Friendly Customer Service",
+                ].map((item) => (
+                  <li key={item} className="rounded-lg bg-accent/15 px-3 py-2">{item}</li>
+                ))}
+              </ul>
+            </div>
             <img
               src={ePalmerLogo.url}
               alt="E. Palmer Supermarket logo"
               loading="lazy"
-              className="h-20 w-auto"
+              className="w-full self-start md:w-56"
             />
-            <ShoppingBasket className="text-primary" />
           </div>
-          <h2 className="mt-3 font-display text-3xl">E. Palmer Supermarket</h2>
-          <p className="mt-1 font-semibold text-secondary">Serving the Community with Pride</p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            E. Palmer Supermarket is an independently owned, veteran-founded, minority-owned
-            supermarket founded by Mike Palmer and Esron Palmer. They take pride in bringing a
-            full-service supermarket to the underserved communities of Norfolk and the surrounding
-            areas. Their mission is to provide quality products, affordable prices, and exceptional
-            customer service while serving their neighbors with pride every day.
-          </p>
-          <p className="mt-5 text-sm font-bold uppercase tracking-wider text-muted-foreground">
-            They Offer
-          </p>
-          <ul className="mt-2 grid gap-2 sm:grid-cols-2 text-sm text-foreground/90">
-            {[
-              "Fresh Fruits & Veggies — 50% OFF with EBT",
-              "In-House Butcher — fresh meats cut daily",
-              "Caribbean & International Groceries",
-              "Household Essentials",
-              "Weekly Specials",
-              "Friendly Customer Service",
-            ].map((item) => (
-              <li key={item} className="rounded-lg bg-accent/15 px-3 py-2">{item}</li>
-            ))}
-          </ul>
         </article>
 
         {/* MP Island Cafe */}
         <article className="rounded-2xl border bg-card p-8 shadow-sm">
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-start">
+            <div>
+              <h2 className="font-display text-3xl">MP Island Cafe</h2>
+              <p className="mt-1 font-semibold text-secondary">
+                Giving You A True Taste of the Islands
+              </p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                Bringing authentic island flavors and cuisine to the festival.
+              </p>
+              <p className="mt-4 text-foreground/90 leading-relaxed">
+                MP Island Cafe has three locations: 5957 E. Va Beach Blvd. in Norfolk, VA; 12914
+                Jefferson Ave. in Newport News, VA; and 5583 Portsmouth Blvd. in Portsmouth, VA. We
+                offer a wide variety of Caribbean and Soul Food cuisine, including an all-you-can-eat
+                lunch and dinner buffet which is sure to delight your taste buds.
+              </p>
+            </div>
             <img
               src={mpIslandLogo.url}
               alt="MP Island Cafe logo"
               loading="lazy"
-              className="h-32 w-auto"
+              className="w-full self-start md:w-64"
             />
           </div>
-          <h2 className="mt-3 font-display text-3xl">MP Island Cafe</h2>
-          <p className="mt-1 font-semibold text-secondary">
-            Giving You A True Taste of the Islands
-          </p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            Bringing authentic island flavors and cuisine to the festival.
-          </p>
-          <p className="mt-4 text-foreground/90 leading-relaxed">
-            MP Island Cafe has three locations: 5957 E. Va Beach Blvd. in Norfolk, VA; 12914
-            Jefferson Ave. in Newport News, VA; and 5583 Portsmouth Blvd. in Portsmouth, VA. We
-            offer a wide variety of Caribbean and Soul Food cuisine, including an all-you-can-eat
-            lunch and dinner buffet which is sure to delight your taste buds.
-          </p>
         </article>
       </section>
 
