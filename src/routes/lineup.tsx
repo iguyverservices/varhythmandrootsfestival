@@ -56,7 +56,7 @@ function Lineup() {
       <section className="bg-gradient-to-br from-primary to-secondary text-primary-foreground">
         <div className="mx-auto max-w-5xl px-4 py-16 text-center">
           <h1 className="font-display text-5xl md:text-6xl">Entertainment &amp; Music Lineup</h1>
-          <p className="mt-3 text-lg opacity-90">Saturday, August 22, 2026 · 11:00 AM – 7:00 PM</p>
+          <p className="mt-3 text-lg opacity-90">Saturday, August 22, 2026 · 11:00 AM – 6:30 PM</p>
           <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary-foreground/10 px-4 py-2 text-sm font-semibold">
             <Mic className="size-4 text-accent" /> Host: Ray Leezy (87.7 &amp; 102.1)
           </p>

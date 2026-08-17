@@ -12,7 +12,7 @@ export function SiteFooter() {
           <p className="mt-2 text-sm opacity-90">
             Mount Trashmore Park · 310 Edwin Drive, Virginia Beach, VA
             <br />
-            Saturday, August 22, 2026 · 11:00 AM – 7:00 PM
+            Saturday, August 22, 2026 · 11:00 AM – 6:30 PM
           </p>
         </div>
         <div className="text-sm space-y-1">
