@@ -9,11 +9,13 @@ import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 import yankeeGirl from "@/assets/yankee-girl-promotions.jpg.asset.json";
 import soulFoodKitchen from "@/assets/thee-soul-food-kitchen.jpg.asset.json";
 import smilesOnFaces from "@/assets/smiles-on-faces.jpg.asset.json";
+import goneBananas from "@/assets/gone-bananas.png.asset.json";
 
 const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
   { name: "Thee Soul Food Kitchen", url: soulFoodKitchen.url },
   { name: "Smiles On Faces", url: smilesOnFaces.url },
+  { name: "Gone Bananas Norfolk Banana & Produce", url: goneBananas.url },
 ];
 
 
@@ -165,7 +167,7 @@ function Sponsors() {
         <p className="mt-2 text-center text-muted-foreground">
           Proud supporters and performers of VA Rhythm &amp; Roots Festival.
         </p>
-        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3">
+        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-4">
           {partners.map((p) => (
             <li
               key={p.name}
