@@ -2,7 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Music, Users, Utensils, PartyPopper, Mic, Tent, Ban, Clock } from "lucide-react";
-import flyer from "@/assets/festival-flyer-2026.jpg.asset.json";
+import { FlyerSlideshow } from "@/components/FlyerSlideshow";
+import flyerMusic from "@/assets/flyer-music-lineup.jpg.asset.json";
+import flyerFood from "@/assets/flyer-food-festival.jpg.asset.json";
+import flyerVendors from "@/assets/flyer-vendors.jpg.asset.json";
 
 const EVENTBRITE = "https://varhythmandrootsfestival.eventbrite.com";
 
