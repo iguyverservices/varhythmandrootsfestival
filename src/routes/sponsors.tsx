@@ -21,17 +21,8 @@ import djGeso from "@/assets/dj-geso.jpg.asset.json";
 
 const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
-  { name: "Phenomenal Sound R&B Band", url: phenomenalSound.url },
-  { name: "Raspy & The Unknown Band", url: raspyUnknown.url },
-  { name: "Toxic Vibes Sound", url: toxicVibes.url },
-  { name: "757 No Limit Steppaz", url: noLimitSteppaz.url },
   { name: "Thee Soul Food Kitchen", url: soulFoodKitchen.url },
-  { name: "DJ Chris G", url: djChrisG.url },
-  { name: "DJ Red Carpet Capo", url: djRedCarpetCapo.url },
-  { name: "Greg Gutty Band", url: gregGuttyBand.url },
   { name: "Smiles On Faces", url: smilesOnFaces.url },
-  { name: "Higher Level Sound", url: higherLevelSound.url },
-  { name: "DJ Geso", url: djGeso.url },
 ];
 
 
