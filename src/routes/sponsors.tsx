@@ -9,6 +9,7 @@ import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 import yankeeGirl from "@/assets/yankee-girl-promotions.jpg.asset.json";
 import soulFoodKitchen from "@/assets/thee-soul-food-kitchen.jpg.asset.json";
 import smilesOnFaces from "@/assets/smiles-on-faces.jpg.asset.json";
+import goneBananas from "@/assets/gone-bananas.png.asset.json";
 
 const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
