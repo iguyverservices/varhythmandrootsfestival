@@ -167,7 +167,7 @@ function Sponsors() {
         <p className="mt-2 text-center text-muted-foreground">
           Proud supporters and performers of VA Rhythm &amp; Roots Festival.
         </p>
-        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3">
+        <ul className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-4">
           {partners.map((p) => (
             <li
               key={p.name}
