@@ -2,7 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/PageShell";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Music, Users, Utensils, PartyPopper, Mic, Tent, Ban, Clock } from "lucide-react";
-import flyer from "@/assets/festival-flyer-2026.jpg.asset.json";
+import { FlyerSlideshow } from "@/components/FlyerSlideshow";
+import flyerMusic from "@/assets/flyer-music-lineup.jpg.asset.json";
+import flyerFood from "@/assets/flyer-food-festival.jpg.asset.json";
+import flyerVendors from "@/assets/flyer-vendors.jpg.asset.json";
 
 const EVENTBRITE = "https://varhythmandrootsfestival.eventbrite.com";
 
@@ -15,8 +18,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Free, all-ages festival at Mount Trashmore Park: R&B and Reggae bands, DJs, line dancing, food trucks, craft vendors, and family fun." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: flyer.url },
-      { name: "twitter:image", content: flyer.url },
+      { property: "og:image", content: flyerMusic.url },
+      { name: "twitter:image", content: flyerMusic.url },
     ],
   }),
   component: Home,
@@ -103,8 +106,17 @@ function Home() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 rounded-3xl bg-accent/40 blur-2xl" />
-            <img src={flyer.url} alt="VA Rhythm & Roots Festival 2026 flyer" className="relative w-full rounded-2xl shadow-2xl ring-4 ring-accent/60" />
+            <div className="relative">
+              <FlyerSlideshow
+                slides={[
+                  { url: flyerMusic.url, alt: "VA Rhythm & Roots Festival 2026 music lineup flyer" },
+                  { url: flyerFood.url, alt: "VA Rhythm & Roots Festival 2026 food festival flyer" },
+                  { url: flyerVendors.url, alt: "VA Rhythm & Roots Festival 2026 vendors flyer" },
+                ]}
+              />
+            </div>
           </div>
+
         </div>
       </section>
 
