@@ -29,7 +29,7 @@ function Info() {
         <div className="rounded-2xl border bg-card p-6">
           <Calendar className="text-primary" />
           <h3 className="font-display text-xl mt-2">When</h3>
-          <p className="text-sm text-muted-foreground mt-1">Saturday, August 22, 2026<br />11:00 AM – 7:00 PM</p>
+          <p className="text-sm text-muted-foreground mt-1">Saturday, August 22, 2026<br />11:00 AM – 6:30 PM</p>
         </div>
         <div className="rounded-2xl border bg-card p-6">
           <MapPin className="text-primary" />

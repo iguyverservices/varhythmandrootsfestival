@@ -100,7 +100,7 @@ function Home() {
               </Button>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-4 text-sm">
-              <div className="flex items-start gap-2"><Calendar className="mt-0.5 text-accent" /><div><div className="font-semibold">11:00 AM – 7:00 PM</div><div className="opacity-80">Saturday, August 22, 2026</div></div></div>
+              <div className="flex items-start gap-2"><Calendar className="mt-0.5 text-accent" /><div><div className="font-semibold">11:00 AM – 6:30 PM</div><div className="opacity-80">Saturday, August 22, 2026</div></div></div>
               <div className="flex items-start gap-2"><MapPin className="mt-0.5 text-accent" /><div><div className="font-semibold">Mount Trashmore Park</div><div className="opacity-80">310 Edwin Drive, Virginia Beach, VA</div></div></div>
             </div>
           </div>
