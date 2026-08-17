@@ -26,7 +26,7 @@ export function SiteFooter() {
           </p>
           <p className="flex items-center gap-2">
             <Facebook className="size-4" />
-            <a className="hover:underline" href="https://facebook.com/varhythmandrootsfestival" target="_blank" rel="noopener noreferrer">VA Rhythm &amp; Roots Festival</a>
+            <a className="hover:underline" href="https://www.facebook.com/Mpislandcaferestaurant" target="_blank" rel="noopener noreferrer">VA Rhythm &amp; Roots Festival</a>
           </p>
         </div>
         <div className="text-sm space-y-2">
