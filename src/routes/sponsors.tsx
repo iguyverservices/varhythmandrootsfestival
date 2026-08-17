@@ -15,6 +15,7 @@ const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
   { name: "Thee Soul Food Kitchen", url: soulFoodKitchen.url },
   { name: "Smiles On Faces", url: smilesOnFaces.url },
+  { name: "Gone Bananas Norfolk Banana & Produce", url: goneBananas.url },
 ];
 
 
