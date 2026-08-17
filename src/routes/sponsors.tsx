@@ -7,17 +7,8 @@ import morringLogo from "@/assets/morring-law-logo.jpg.asset.json";
 import ePalmerLogo from "@/assets/e-palmer-logo.png.asset.json";
 import mpIslandLogo from "@/assets/mp-island-cafe-logo.jpg.asset.json";
 import yankeeGirl from "@/assets/yankee-girl-promotions.jpg.asset.json";
-import phenomenalSound from "@/assets/phenomenal-sound.png.asset.json";
-import raspyUnknown from "@/assets/raspy-unknown.png.asset.json";
-import toxicVibes from "@/assets/toxic-vibes.png.asset.json";
-import noLimitSteppaz from "@/assets/757-no-limit-steppaz.png.asset.json";
 import soulFoodKitchen from "@/assets/thee-soul-food-kitchen.jpg.asset.json";
-import djChrisG from "@/assets/dj-chris-g.png.asset.json";
-import djRedCarpetCapo from "@/assets/dj-red-carpet-capo.png.asset.json";
-import gregGuttyBand from "@/assets/greg-gutty-band.png.asset.json";
 import smilesOnFaces from "@/assets/smiles-on-faces.jpg.asset.json";
-import higherLevelSound from "@/assets/higher-level-sound.jpg.asset.json";
-import djGeso from "@/assets/dj-geso.jpg.asset.json";
 
 const partners = [
   { name: "Yankee Girl Promotions", url: yankeeGirl.url },
