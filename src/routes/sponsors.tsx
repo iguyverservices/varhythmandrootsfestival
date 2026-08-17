@@ -164,9 +164,6 @@ function Sponsors() {
 
       <section className="mx-auto max-w-5xl px-4 pb-16">
         <h2 className="text-center font-display text-3xl">Proud supporters and performers of VA Rhythm &amp; Roots Festival.</h2>
-        <p className="mt-2 text-center text-muted-foreground">
-          More proud supporters of VA Rhythm &amp; Roots Festival.
-        </p>
         <ul className="mt-8 grid grid-cols-2 gap-6">
           {partners.map((p) => (
             <li
